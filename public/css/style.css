@@ -1,0 +1,139 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: "Microsoft JhengHei", "Helvetica Neue", Arial, sans-serif;
+  background: #f2f4f7;
+  color: #1f2937;
+}
+
+/* ---- 登入 / 註冊 ---- */
+.auth-wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.auth-card {
+  background: #fff;
+  padding: 40px 36px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  width: 360px;
+}
+.auth-card h1 {
+  font-size: 22px;
+  margin-bottom: 4px;
+  text-align: center;
+}
+.auth-card p.subtitle {
+  text-align: center;
+  color: #6b7280;
+  font-size: 13px;
+  margin-bottom: 24px;
+}
+.auth-card label {
+  display: block;
+  font-size: 13px;
+  margin: 14px 0 6px;
+  color: #374151;
+}
+.auth-card input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 14px;
+}
+.auth-card button {
+  width: 100%;
+  margin-top: 22px;
+  padding: 11px;
+  border: none;
+  border-radius: 8px;
+  background: #2563eb;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.auth-card button:hover { background: #1d4ed8; }
+.auth-card .switch-link {
+  text-align: center;
+  margin-top: 18px;
+  font-size: 13px;
+  color: #6b7280;
+}
+.auth-card .switch-link a { color: #2563eb; text-decoration: none; }
+.msg { margin-top: 12px; font-size: 13px; text-align: center; }
+.msg.error { color: #dc2626; }
+.msg.success { color: #16a34a; }
+
+/* ---- 儀表板 ---- */
+.topbar {
+  background: #111827;
+  color: #fff;
+  padding: 14px 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.topbar h1 { font-size: 18px; margin: 0; }
+.topbar .user-info { font-size: 13px; color: #d1d5db; display:flex; align-items:center; gap:14px; }
+.topbar button {
+  background: #ef4444;
+  border: none;
+  color: #fff;
+  padding: 7px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.container { max-width: 1100px; margin: 24px auto; padding: 0 20px; }
+
+.panel {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px 24px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+.panel h2 { font-size: 16px; margin: 0 0 14px; }
+
+.toolbar { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+.btn {
+  padding: 9px 16px;
+  border-radius: 7px;
+  border: none;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+}
+.btn-primary { background: #2563eb; color: #fff; }
+.btn-primary:hover { background: #1d4ed8; }
+.btn-green { background: #059669; color: #fff; }
+.btn-green:hover { background: #047857; }
+.btn-gray { background: #e5e7eb; color: #111827; }
+.btn-gray:hover { background: #d1d5db; }
+.btn-danger { background: #fee2e2; color: #b91c1c; }
+.btn-danger:hover { background: #fecaca; }
+
+input[type="file"] { font-size: 13px; }
+
+table { width: 100%; border-collapse: collapse; font-size: 13px; }
+th, td { padding: 8px 10px; border-bottom: 1px solid #e5e7eb; text-align: left; white-space: nowrap; }
+th { background: #f9fafb; font-weight: 600; }
+tbody tr:hover { background: #f9fafb; }
+
+.status-badge {
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+}
+.status-在職 { background: #dcfce7; color: #15803d; }
+.status-離職 { background: #fee2e2; color: #b91c1c; }
+
+.table-scroll { overflow-x: auto; max-height: 460px; overflow-y: auto; }
+
+.empty-hint { color: #9ca3af; font-size: 13px; padding: 20px 0; text-align: center; }

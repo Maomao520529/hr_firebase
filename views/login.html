@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>登入 | 人力資料庫</title>
+<link rel="stylesheet" href="/css/style.css" />
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+</head>
+<body>
+  <div class="auth-wrapper">
+    <div class="auth-card">
+      <h1>人力資料庫</h1>
+      <p class="subtitle">請登入以繼續</p>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="you@example.com" />
+
+      <label for="password">密碼</label>
+      <input type="password" id="password" placeholder="請輸入密碼" />
+
+      <button id="loginBtn">登入</button>
+
+      <div id="msg" class="msg"></div>
+
+      <div class="switch-link">
+        還沒有帳號？<a href="/register.html">前往註冊</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="/js/firebase-client-config.js"></script>
+  <script src="/js/login.js"></script>
+</body>
+</html>
