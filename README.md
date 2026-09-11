@@ -6,7 +6,7 @@
 3. 上傳 `.xls` / `.xlsx`，解析後匯入 Firestore 資料庫
 4. 從資料庫匯出資料成 `.xlsx`（Excel）與 `.docx`（Word）
 
-## 技術架構
+## 技術架構 *有參考多方資料*
 - **後端**：Node.js + Express
 - **資料庫**：Firebase Firestore（透過 firebase-admin）
 - **登入驗證**：Firebase Authentication（Email/密碼），前端取得 ID Token，後端用 `firebase-admin` 驗證
@@ -25,3 +25,6 @@ npm install
 npm start
 ```
 瀏覽器打開 `http://localhost:3000` 會自動導向登入頁。
+
+
+
